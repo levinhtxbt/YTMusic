@@ -11,4 +11,5 @@
     <dimen name="elevation_high">12dp</dimen>
     <dimen name="status_bar_height">25dp</dimen>
     <dimen name="height_toolbar">64dp</dimen>
+    <dimen name="bottom_control_panel">150dp</dimen>
 </resources>

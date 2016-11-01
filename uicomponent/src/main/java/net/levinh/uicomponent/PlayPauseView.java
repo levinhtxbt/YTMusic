@@ -63,7 +63,6 @@ public class PlayPauseView extends FrameLayout {
         mPaint.setStyle(Paint.Style.FILL);
         mDrawable = new PlayPauseDrawable(context);
         mDrawable.setCallback(this);
-
         mPauseBackgroundColor = colorTheme.data;
         mPlayBackgroundColor = colorTheme.data;
 
@@ -122,7 +121,7 @@ public class PlayPauseView extends FrameLayout {
         mDrawable.draw(canvas);
     }
 
-    private boolean mIsPlay;
+    private boolean mIsPlay = false;
 
     public boolean isPlay() {
         return mIsPlay;
@@ -165,7 +164,6 @@ public class PlayPauseView extends FrameLayout {
         if (mAnimatorSet != null) {
             mAnimatorSet.cancel();
         }
-
         mAnimatorSet = new AnimatorSet();
         final ObjectAnimator colorAnim = ObjectAnimator.ofInt(this, COLOR, mPauseBackgroundColor);
         mIsPlay = false;

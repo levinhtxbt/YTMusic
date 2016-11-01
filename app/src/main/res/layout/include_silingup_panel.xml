@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <net.levinh.uicomponent.slidinguppanelhelper.SlidingUpPanelLayout
+        xmlns:vr = "http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        vr:umanoDragView="@+id/dragView"
+        vr:umanoOverlay="true"
+        vr:umanoPanelHeight="?attr/actionBarSize"
+        vr:umanoParalaxOffset="0dp"
+        vr:umanoShadowHeight="4dp">
+        <!-- MAIN CONTENT -->
+        <include
+            android:id="@+id/include_sliding_panelchildone"
+            layout="@layout/include_slidingpanel_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- SLIDING LAYOUT -->
+        <include
+            android:id="@+id/include_sliding_panel_childtwo"
+            layout="@layout/include_slidingpanel_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </net.levinh.uicomponent.slidinguppanelhelper.SlidingUpPanelLayout>
+
+</LinearLayout>

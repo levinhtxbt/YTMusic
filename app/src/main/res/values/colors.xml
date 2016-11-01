@@ -3,11 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
+    <color name="theme_primary">#2196F3</color>
     <color name="primary">#00BCD4</color>
     <color name="primary_dark">#0097A7</color>
     <color name="accent">#FFEB3B</color>
     <color name="accent_translucent">#80FFEB3B</color>
     <color name="accent_bright">#FFF493</color>
     <color name="md_blue_grey_900">#263238</color>
+    <color name="md_white_1000">#ffffff</color>
+    <color name="textBlur">#BBBBBB</color>
+    <color name="md_divider">#1f000000</color>
+    <color name="md_text">#df000000</color>
+    <color name="md_secondary_text_icons">#8a000000</color>
 </resources>
